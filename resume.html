@@ -6,19 +6,17 @@
     <title>Thomas Monte – Resume</title>
     <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
     <style>
-        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url(fonts/HelveticaNeueRoman.otf);
+        }
+        
         *, *::before, *::after {
             box-sizing: border-box;
         }
 
         *:not(dialog) {
             margin: 0;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            html {
-                interpolate-size: allow-keywords;
-            }
         }
 
         body {
@@ -111,16 +109,21 @@
         .colored-list li:nth-child(5) .icon { color: #457B9D; }
         .colored-list li:nth-child(6) .icon { color: #457B9D; }
 
+        #languages .subtle {
+            margin-left: 16px;
+        }
+
         @media print {
             html {
+                padding: 0;
+                margin: 0;
                 background: #fff;
+                display: block;
             }
             body {
                 padding: 0;
                 margin: 0;
-                max-width: unset;
                 font-size: 12px;
-                padding-bottom: 6rem;
             }
         }
     </style>
@@ -140,12 +143,12 @@
         </div>
         <div class="row">
             <ul class="column">
-                <li><img src="https://cdn.simpleicons.org/gmail" class="icon"> th0m4sm0nt3@gmail.com</li>
-                <li><span class="icon icon-phone"></span>+55 (48) 99122-6812</li>
+                <li><img src="https://cdn.simpleicons.org/tuta" class="icon"> thomasmonte@tuta.io</li>
+                <li><img src="https://cdn.simpleicons.org/whatsapp" class="icon"> +55 (48) 99122-6812</li>
             </ul>
             <ul class="column">
                 <li><img src="https://cdn.simpleicons.org/codeberg" class="icon"> codeberg.org/snegs</li>
-                <li><span class="icon icon-globe"></span> sne.gs</li>
+                <li><img src="https://s.magecdn.com/social/tc-linkedin.svg" class="icon"> linkedin.com/in/thomasmonte</li>
             </ul>
         </div>
     </header>
@@ -214,7 +217,7 @@
                 </span>
                 <span class="subtle">
                     <span class="icon icon-calendar-days"></span>
-                    January 2024 — May 2026
+                    January 2024 — August 2026
                 </span>
             </div>
             <ul>
@@ -497,7 +500,7 @@
                     English
                 </strong>
                 <span class="subtle">
-                    &nbsp;&nbsp;Advanced
+                    Advanced
                 </span>
             </li>
             <li>
@@ -506,7 +509,7 @@
                     Portuguese
                 </strong>
                 <span class="subtle">
-                    &nbsp;&nbsp;Native
+                    Native
                 </span>
             </li>
             <li>
@@ -515,7 +518,7 @@
                     Spanish
                 </strong>
                 <span class="subtle">
-                    &nbsp;&nbsp;Fluent
+                    Fluent
                 </span>
             </li>
             <li>
@@ -524,7 +527,7 @@
                     Japanese
                 </strong>
                 <span class="subtle">
-                    &nbsp;&nbsp;Basic
+                    Basic
                 </span>
             </li>
         </ul>

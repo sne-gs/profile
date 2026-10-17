@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Monte – Currículo</title>
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+    <style>
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url(fonts/HelveticaNeueRoman.otf);
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        *:not(dialog) {
+            margin: 0;
+        }
+
+        body {
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            padding: 4rem;
+            background: #fff;
+            max-width: 1200px;
+        }
+
+        img, picture, video, canvas, svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        input, button, textarea, select {
+            font: inherit;
+        }
+
+        p, h1, h2, h3, h4, h5, h6 {
+            overflow-wrap: break-word;
+        }
+
+        p {
+            text-wrap: pretty;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-wrap: balance;
+            margin: 1rem 0;
+        }
+
+        #root, #__next {
+            isolation: isolate;
+        }
+
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+        }
+
+        .row {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img.icon {
+            width: 14px;
+            height: 14px;
+        }
+
+        .icon {
+            display: inline-block;
+            margin: 0 0.6rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 0;
+            margin: 0;
+        }
+
+        .subtle {
+            color: #666;
+        }
+
+        .colored-list li:nth-child(1) .icon { color: #E63946; }
+        .colored-list li:nth-child(2) .icon { color: #F4A261; }
+        .colored-list li:nth-child(3) .icon { color: #E9C46A; }
+        .colored-list li:nth-child(4) .icon { color: #2A9D8F; }
+        .colored-list li:nth-child(5) .icon { color: #457B9D; }
+        .colored-list li:nth-child(6) .icon { color: #457B9D; }
+
+        #languages .subtle {
+            margin-left: 16px;
+        }
+
+        @media print {
+            html {
+                padding: 0;
+                margin: 0;
+                background: #fff;
+                display: block;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="contact" class="column">
+        <div>
+            <h1>Thomas Monte</h1>
+            <p>Engenheiro de Software Staff/Principal com mais de 15 anos de experiência arquitetando sistemas distribuídos,
+            microsserviços orientados a eventos e pipelines de dados em tempo real.
+            Habilidade em .NET, Go, Scala, TypeScript e paradigmas de programação funcional.</p>
+        </div>
+        <div>
+            <h3>
+                Contato
+            </h3>
+        </div>
+        <div class="row">
+            <ul class="column">
+                <li><img src="https://cdn.simpleicons.org/tuta" class="icon"> thomasmonte@tuta.io</li>
+                <li><img src="https://cdn.simpleicons.org/whatsapp" class="icon"> +55 (48) 99122-6812</li>
+            </ul>
+            <ul class="column">
+                <li><img src="https://cdn.simpleicons.org/codeberg" class="icon"> codeberg.org/snegs</li>
+                <li><img src="https://s.magecdn.com/social/tc-linkedin.svg" class="icon"> linkedin.com/in/thomasmonte</li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="expertise">
+        <h3>Especialidades</h3>
+        <div class="row">
+            <ul class="column colored-list">
+                <li><span class="icon icon-chevron-right"></span>Arquiteturas Orientadas a Serviços</li>
+                <li><span class="icon icon-chevron-right"></span>Sistemas Distribuídos</li>
+                <li><span class="icon icon-chevron-right"></span>Domain Driven Design</li>
+                <li><span class="icon icon-chevron-right"></span>Consistência Eventual</li>
+                <li><span class="icon icon-chevron-right"></span>Containerização</li>
+            </ul>
+            <ul class="column colored-list">
+                <li><span class="icon icon-chevron-right"></span>Design de Sistemas</li>
+                <li><span class="icon icon-chevron-right"></span>Princípios de Design SOLID</li>
+                <li><span class="icon icon-chevron-right"></span>Programação Funcional</li>
+                <li><span class="icon icon-chevron-right"></span>Modelagem de Dados</li>
+                <li><span class="icon icon-chevron-right"></span>Streaming de Big Data</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="technologies">
+        <h3>Tecnologias</h3>
+        <div class="row">
+            <ul class="column">
+                <li><img src="https://cdn.simpleicons.org/docker" class="icon"> Docker</li>
+                <li><img src="https://cdn.simpleicons.org/kubernetes" class="icon"> Kubernetes</li>
+                <li><img src="https://cdn.simpleicons.org/dapr" class="icon"> Dapr</li>
+                <li><img src="https://cdn.simpleicons.org/postgresql" class="icon"> Postgres</li>
+                <li><img src="https://cdn.simpleicons.org/apachekafka" class="icon"> Kafka</li>
+                <li><img src="https://cdn.simpleicons.org/redis" class="icon"> Redis</li>
+            </ul>
+            <ul class="column">
+                <li><img src="https://cdn.simpleicons.org/dotnet" class="icon"> C#/F#</li>
+                <li><img src="https://cdn.simpleicons.org/zig" class="icon"> Zig</li>
+                <li><img src="https://cdn.simpleicons.org/go" class="icon"> Go</li>
+                <li><img src="https://cdn.simpleicons.org/scala" class="icon"> Scala</li>
+                <li><img src="https://cdn.simpleicons.org/apachespark" class="icon"> Spark</li>
+                <li><img src="https://cdn.simpleicons.org/php" class="icon"> PHP</li>
+            </ul>
+            <ul class="column">
+                <li><img src="https://cdn.simpleicons.org/html5" class="icon"> HTML/CSS</li>
+                <li><img src="https://cdn.simpleicons.org/typescript" class="icon"> Typescript</li>
+                <li><img src="https://cdn.simpleicons.org/react" class="icon"> ReactJS</li>
+                <li><img src="https://cdn.simpleicons.org/angular" class="icon"> AngularJS</li>
+                <li><img src="https://cdn.simpleicons.org/solid" class="icon"> SolidJS</li>
+                <li><img src="https://cdn.simpleicons.org/google" class="icon"> gRPC</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experiência</h2>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software Sênior
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Mindbody
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Janeiro de 2024 — Agosto de 2026
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Arquitetou um chatbot inteligente para suporte no produto, usando IA conversacional para simplificar o atendimento ao usuário</li>
+                <li><span class="icon icon-chevron-right"></span>Integrou ecossistemas de provedores, entregando um pipeline de suporte agêntico do autoatendimento com IA ao escalonamento humano</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou uma arquitetura tolerante a falhas mantendo 100% de uptime com milhares de usuários simultâneos</li>
+                <li><span class="icon icon-chevron-right"></span>Modernizou o código legado por meio de migração estratégica do stack tecnológico, gerando ganhos mensuráveis de desempenho</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software Sênior
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    GuideCX
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Setembro de 2022 — Novembro de 2023
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Definiu uma arquitetura distribuída greenfield, estabelecendo limites de serviços escaláveis e comunicação orientada a eventos</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou um ecossistema de microsserviços usando Dapr, .NET e Protocol Buffers para contratos entre serviços</li>
+                <li><span class="icon icon-chevron-right"></span>Migrou microsserviços .NET selecionados para Go, reduzindo overhead de recursos e latência em caminhos críticos de throughput</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu uma camada gRPC com frontend TypeScript usando geração de tipos derivada de proto, eliminando divergência de serialização</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou um pipeline de replicação lógica usando Kafka Connect e Redpanda para alimentar um data warehouse de análises em tempo real baseado em Cube.js</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software Principal
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Pluralsight
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Abril de 2021 — Setembro de 2022
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Direcionou a estratégia arquitetônica em 4 equipes de engenharia no domínio B2B da Pluralsight</li>
+                <li><span class="icon icon-chevron-right"></span>Elaborou contratos de serviço para um sistema distribuído, estabelecendo limites de interface e protocolos de comunicação</li>
+                <li><span class="icon icon-chevron-right"></span>Ministrou treinamentos e mentoria em arquiteturas orientadas a serviços, design de sistemas, princípios SOLID e desenvolvimento front-end</li>
+                <li><span class="icon icon-chevron-right"></span>Liderou iniciativas de ferramentas de infraestrutura entre equipes: frameworks de invocação de serviços, abstrações de filas, rastreamento distribuído e fundamentos de design system</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software Sênior
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Pluralsight
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Junho de 2019 — Abril de 2021
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Projetou uma plataforma de streaming de big data para análise de métricas de usuários em tempo real usando Apache Spark e Scala</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou serviços de API backend em C# e .NET seguindo princípios RESTful e padrões de arquitetura limpa</li>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu um framework leve de gerenciamento de estado front-end usando ópticas funcionais em uma base de código inspirada em Flux</li>
+                <li><span class="icon icon-chevron-right"></span>Liderou um design system baseado em Material Design adotado por 3 equipes, estabelecendo primitivos de componentes reutilizáveis</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu componentes interativos de apresentação de dados e dashboards para visualização de análises</li>
+                <li><span class="icon icon-chevron-right"></span>Introduziu TypeScript na base de código client, reduzindo erros em tempo de execução por meio de segurança de tipos em tempo de compilação</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software Sênior
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Xactware
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Janeiro de 2018 — Maio de 2019
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Projetou a plataforma online de sinistros de próxima geração da Xactware, arquitetando a UI e a camada de serviços para um sistema greenfield</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou contratos de serviço backend e APIs RESTful usando C# e .NET</li>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu componentes front-end com AngularJS para uma experiência SPA responsiva</li>
+                <li><span class="icon icon-chevron-right"></span>Ministrou treinamentos em toda a organização em programação funcional, programação reativa e tecnologias front-end</li>
+                <li><span class="icon icon-chevron-right"></span>Promoveu BDD e TDD em várias equipes, cultivando uma cultura de qualidade de código e redução de defeitos em produção</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Adobe
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Maio de 2017 — Setembro de 2017
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Projetou e desenvolveu um aplicativo de página única com gerenciamento de dados administrativos e dashboards integrados ao JIRA</li>
+                <li><span class="icon icon-chevron-right"></span>Arquitetou o full stack com foco em desempenho, escalabilidade e manutenibilidade</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu componentes React customizados para autocomplete, seleção de data/hora e outros primitivos de UI</li>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu uma camada de API backend usando PHP</li>
+                <li><span class="icon icon-chevron-right"></span>Redesenhou um schema de banco de dados PostgreSQL para suportar novos requisitos, melhorando o desempenho de consultas e a integridade de dados</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    InsideSales
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Janeiro de 2017 — Abril de 2017
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Contribuiu para a integração dos Playbooks da InsideSales com o Microsoft Dynamics CRM para fluxo de dados entre plataformas</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu serviços backend em um stack poliglota usando C#, Scala e Go</li>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu e manteve a base de código client para a extensão Chrome Playbooks usando React</li>
+                <li><span class="icon icon-chevron-right"></span>Praticou BDD e TDD orientados a contratos em todas as camadas da aplicação</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Brigham Young University
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Agosto de 2015 — Dezembro de 2016
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu um aplicativo web semelhante a planilha para transcrição colaborativa em tempo real de registros históricos de imigração</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou interações geoespaciais, incluindo zoom, navegação panorâmica e camadas de medição</li>
+                <li><span class="icon icon-chevron-right"></span>Otimizou a renderização para lidar com milhões de registros em uma única página do navegador</li>
+                <li><span class="icon icon-chevron-right"></span>Projetou um banco de dados MS-SQL para as estruturas hierárquicas de registros do domínio</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu um servidor C# .NET WebAPI e um front-end SPA usando React</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    TheMathCo
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Janeiro de 2012 — Agosto de 2015
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu uma plataforma online de matemática com entrega interativa de currículo e avaliações</li>
+                <li><span class="icon icon-chevron-right"></span>Implementou um sistema de pagamento customizado integrado ao Authorize.NET para assinaturas, faturamento e reconciliação</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu um pipeline de gerenciamento de conteúdo suportando upload de arquivos, envio de tarefas e correção automatizada</li>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu um painel administrativo para processamento de pagamentos, agendamento de turmas, gerenciamento de usuários e análises</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="row">
+                <h3>
+                    Engenheiro de Software
+                </h3>
+                <span class="subtle">
+                    <span class="icon icon-building"></span>
+                    Prefeitura de Florianópolis
+                </span>
+                <span class="subtle">
+                    <span class="icon icon-calendar-days"></span>
+                    Janeiro de 2010 — Dezembro de 2010
+                </span>
+            </div>
+            <ul>
+                <li><span class="icon icon-chevron-right"></span>Desenvolveu um sistema de rastreamento de interrupções usando PHP e JavaScript puro para municípios registrarem e monitorarem interrupções de serviço</li>
+                <li><span class="icon icon-chevron-right"></span>Adaptou a aplicação a uma nova linguagem de design customizada, refazendo toda a interface</li>
+                <li><span class="icon icon-chevron-right"></span>Construiu componentes de relatórios e gráficos para insights operacionais</li>
+                <li><span class="icon icon-chevron-right"></span>Implementou autenticação e autorização baseadas em papéis</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="education">
+        <h2>Formação</h2>
+        <article>
+            <div class="row">
+                <strong>
+                    <span class="icon icon-graduation-cap"></span>
+                    ASc em Sistemas de Informação
+                </strong>
+                <p class="subtle">
+                    <span>
+                        <span class="icon icon-university"></span>
+                        Ensign College
+                    </span>
+                    <span>
+                        <span class="icon icon-map-pin"></span>
+                        Salt Lake City, UT (2011 — 2013)
+                    </span>
+                </p>
+            </div>
+            <div class="row">
+                <strong>
+                    <span class="icon icon-graduation-cap"></span>
+                    BSc em Ciência da Computação
+                </strong>
+                <p class="subtle">
+                    <span>
+                        <span class="icon icon-university"></span>
+                        Brigham Young University
+                    </span>
+                    <span>
+                        <span class="icon icon-map-pin"></span>
+                        Provo, UT (2014 — 2017)
+                    </span>
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section id="courses">
+        <h3>Disciplinas Relevantes</h3>
+        <div class="row">
+            <ul class="column colored-list">
+                <li><span class="icon icon-chevron-right"></span>Engenharia de Sistemas</li>
+                <li><span class="icon icon-chevron-right"></span>Computação Gráfica</li>
+                <li><span class="icon icon-chevron-right"></span>Programação para Internet</li>
+                <li><span class="icon icon-chevron-right"></span>Redes e Concorrência</li>
+                <li><span class="icon icon-chevron-right"></span>Engenharia de UX</li>
+            </ul>
+            <ul class="column colored-list">
+                <li><span class="icon icon-chevron-right"></span>Teoria Computacional</li>
+                <li><span class="icon icon-chevron-right"></span>Estruturas Discretas</li>
+                <li><span class="icon icon-chevron-right"></span>Estruturas de Dados</li>
+                <li><span class="icon icon-chevron-right"></span>Design de Software</li>
+                <li><span class="icon icon-chevron-right"></span>Projeto e Análise de Algoritmos</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages">
+        <h2>Idiomas</h2>
+        <ul class="column">
+            <li>
+                <strong>
+                    <span class="icon icon-earth"></span>
+                    Inglês
+                </strong>
+                <span class="subtle">
+                    Avançado
+                </span>
+            </li>
+            <li>
+                <strong>
+                    <span class="icon icon-earth"></span>
+                    Português
+                </strong>
+                <span class="subtle">
+                    Nativo
+                </span>
+            </li>
+            <li>
+                <strong>
+                    <span class="icon icon-earth"></span>
+                    Espanhol
+                </strong>
+                <span class="subtle">
+                    Fluente
+                </span>
+            </li>
+            <li>
+                <strong>
+                    <span class="icon icon-earth"></span>
+                    Japonês
+                </strong>
+                <span class="subtle">
+                    Básico
+                </span>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
