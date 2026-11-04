@@ -1,7 +1,4 @@
 .venv/
 .direnv/
 result
-dist/
-node_modules/
-/resume.pdf
-/resume_pt-br.pdf
+/dist/
